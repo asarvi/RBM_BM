@@ -92,7 +92,7 @@ In the implementation of the RBM, several modifications were made to the archite
 ### Experimentation and Results
 The code was run using various batch sizes, learning rates, and epoch counts. The selected parameters  were based on their performance, based on the output graphs.
 Finally, batch size is set to 80, learning rate is 0.06, number of epochs is 15 and number of hidden layers is set to 300 after testing various numbers.
-The quality of generated digits was acceptable and the samples were similar to training set.
+The quality of generated digits was acceptable and the samples were similar to training set. However, the model seems to be generating some noises in digits.
 These samples can also be seen at the end of each code file.
 
 
