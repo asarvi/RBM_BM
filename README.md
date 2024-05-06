@@ -97,3 +97,6 @@ The quality of generated digits was acceptable and the samples were similar to t
 These samples can also be seen at the end of each code file.
 
 
+### Comparing the model results (BM and RBM)
+When I compared the two models, the regular Boltzmann Machine (BM) seemed to do a better job at guessing the validation data. It made some numbers look more realistic. The Restricted Boltzmann Machine (RBM) was better at making other numbers, but it also made more noise in the generated digits.
+
