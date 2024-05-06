@@ -63,11 +63,11 @@ The FCBM class is defined with 784 visible (input) units, according to the 28x28
 
 ### Key Functions and Model Architecture
 
-•  sample_BM(p): Samples binary states based on probabilities p.
+•  `sample_BM(p)`: Samples binary states based on probabilities p.
 
-•  forward(v): Conducts the forward pass, implementing the Contrastive Divergence algorithm.
+•  `forward(v)`: Conducts the forward pass, implementing the Contrastive Divergence algorithm.
 
-•  free_energy(v): Calculates the free energy for a given visible state v, essential for loss computation during training, where the free energy is defined as:
+•  `free_energy(v)`: Calculates the free energy for a given visible state v, essential for loss computation during training, where the free energy is defined as:
 
 $$ F(v) = -\sum_{i} a_i v_i - \sum_{j} \log(1 + e^{(b_j + \sum_{i} v_i W_{ij})}) $$
 
