@@ -60,7 +60,7 @@ validation_loader = DataLoader(validation_dataset,batch_size,shuffle=False)
 
 The FCBM class is defined with 784 visible (input) units, according to the 28x28 pixel size of MNIST images, and 612 hidden units. The number of hidden units was selected according to the methods provided in one of the reference papers.
 
-Key functions within the class include:
+### Key Functions and Model Architecture
 
 •  sample_BM(p): Samples binary states based on probabilities p.
 
@@ -73,8 +73,9 @@ $$ F(v) = -\sum_{i} a_i v_i - \sum_{j} \log(1 + e^{(b_j + \sum_{i} v_i W_{ij})})
 Training is conducted over 10 epochs, a balance between efficiency and performance. The learning rate was fine-tuned to 0.08 after experimentation, as it shows acceptable performance according to output(loss) graphs. For optimizer I used SGD.
 
 During the training, the model applies forward passes, loss calculations, backpropagation, and optimization, and after each epoch, results are printed as outputs, which can be seen after each cell runs in the code.
+### Experimentation and Results
 
-To evaluate the models, images of training samples and their corresponding generated samples are displayed. It was observed that the model more accurately generates digits composed of straight lines compared to those with curves, such as '0' and '6'.
+To evaluate the models, images of training samples and their corresponding generated samples are displayed. It was observed that the model more accurately generates digits composed of straight lines compared to those with curves, such as '2' and '8'.
 
 ## Implementation Details for Restricted Boltzmann Machine (RBM)
 
