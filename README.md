@@ -1,4 +1,5 @@
 This repository contains implementations of two neural network models: a Fully Connected Boltzmann Machine (FCBM) and a Restricted Boltzmann Machine (RBM). 
+To get the final output, simply run the code cells one by one.
 ## Implementation Details for Boltzmann Machine (BM)
 
 To run the code in this repository, you will need the latest version of the following libraries:
